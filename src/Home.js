@@ -24,7 +24,7 @@ class Home extends Component {
             // backgroundImage: 'url(' + require('./images/header.jpg') + ')'
           }}
           >
-            #kebunkode
+            #kebunkode #one_stop_smart_agriculture_solution
           </div>
         </Sticky>
         <Center
