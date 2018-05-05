@@ -9,6 +9,7 @@ import GoogleMapReact from 'google-map-react';
 import Sticky from 'react-stickynode';
 import { Switch, Route } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import Acrylic from 'react-acrylic';
 
 
 class Home extends Component {
@@ -16,15 +17,19 @@ class Home extends Component {
     let imgUrl = 'images/header.jpg'
     return (
       <div>
-        <Sticky top='#header' bottomBoundary='#content'>
+        <Sticky top='#header' bottomBoundary='#content' style={{flexDirection: 'row'}}>
           <div style={{
             backgroundColor: 'brown',
             color: 'yellow',
             padding: 25,
             // backgroundImage: 'url(' + require('./images/header.jpg') + ')'
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'space-between'
           }}
           >
-            #kebunkode #one_stop_smart_agriculture_solution
+            <div>#kebunkode</div>
+            <div>#one_stop_smart_agriculture_solution</div>
           </div>
         </Sticky>
         <Center
