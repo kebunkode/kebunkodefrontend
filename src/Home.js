@@ -13,27 +13,45 @@ import { Link } from 'react-router-dom'
 
 class Home extends Component {
   render() {
+    let imgUrl = 'images/header.jpg'
     return (
       <div>
         <Sticky top='#header' bottomBoundary='#content'>
-          <div style={{backgroundColor: 'blue', color: 'yellow', padding: 25}}>
+          <div style={{
+            backgroundColor: 'brown',
+            color: 'yellow',
+            padding: 25,
+            // backgroundImage: 'url(' + require('./images/header.jpg') + ')'
+          }}
+          >
             #kebunkode
           </div>
         </Sticky>
-        <Center style={{height: 700, backgroundColor: 'black', flexDirection: 'row'}}>
-          <div style={{color: 'white', margin: 10}}><Link to='/benih'>#benih</Link></div>
-          <div style={{color: 'white', margin: 10}}><Link to='/IOT'>#IOT</Link></div>
-          <div style={{color: 'white', margin: 10}}><Link to='/pot'>#pot</Link></div>
+        <Center
+          style={{
+            height: 700,
+            backgroundColor: 'black',
+            flexDirection: 'row',
+            // backgroundImage: 'url(' + require('./images/garden.jpg') + ')'
+          }}>
+          <div style={{color: 'white', margin: 10}}><Link to='/benih' style={{color: 'white'}}>#benih</Link></div>
+          <div style={{color: 'white', margin: 10}}><Link to='/IOT' style={{color: 'white'}}>#IOT</Link></div>
+          <div style={{color: 'white', margin: 10}}><Link to='/pot' style={{color: 'white'}}>#pot</Link></div>
         </Center>
         <StickyFooter
           bottomThreshold={50}
           normalStyles={{
-            backgroundColor: "green",
-            padding: "2rem"
+            // backgroundImage: 'url(' + require('./images/header.jpg') + ')',
+            backgroundColor: "brown",
+            padding: "2rem",
+            color: "yellow"
           }}
           stickyStyles={{
-            backgroundColor: "green",
-            padding: "2rem"
+            // backgroundImage: 'url(' + require('./images/header.jpg') + ')',
+            backgroundColor: "brown",
+            padding: "2rem",
+            color: "yellow"
+            // width: "100%"
           }}
           >
           copyright #kebunkode
