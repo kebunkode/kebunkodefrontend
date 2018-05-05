@@ -10,7 +10,8 @@ import Sticky from 'react-stickynode';
 import { Switch, Route } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import Acrylic from 'react-acrylic';
-
+import GitHubFeed from 'react-github-activity'
+var Blur = require('react-blur');
 
 class Home extends Component {
   render() {
@@ -36,12 +37,57 @@ class Home extends Component {
           style={{
             height: 700,
             backgroundColor: 'black',
-            flexDirection: 'row',
+            flexDirection: 'column',
             // backgroundImage: 'url(' + require('./images/garden.jpg') + ')'
           }}>
           <div style={{color: 'white', margin: 10}}><Link to='/benih' style={{color: 'white'}}>#benih</Link></div>
           <div style={{color: 'white', margin: 10}}><Link to='/IOT' style={{color: 'white'}}>#IOT</Link></div>
           <div style={{color: 'white', margin: 10}}><Link to='/pot' style={{color: 'white'}}>#pot</Link></div>
+          <img src={require('./images/smartfarming.jpg')}  />
+        </Center>
+        <Center
+          style={{
+            height: 700,
+            backgroundColor: 'black',
+            flexDirection: 'row',
+            // backgroundImage: 'url(' + require('./images/garden.jpg') + ')'
+          }}>
+          <InstagramEmbed
+            url='https://www.instagram.com/p/BiStkGKllnO'
+            maxWidth={320}
+            hideCaption={false}
+            containerTagName='div'
+            protocol=''
+            onLoading={() => {}}
+            onSuccess={() => {}}
+            onAfterRender={() => {}}
+            onFailure={() => {}}
+            style={{margin: 40}}
+          />
+          <InstagramEmbed
+            url='https://www.instagram.com/p/BiVSzEvg-hk'
+            maxWidth={320}
+            hideCaption={false}
+            containerTagName='div'
+            protocol=''
+            onLoading={() => {}}
+            onSuccess={() => {}}
+            onAfterRender={() => {}}
+            onFailure={() => {}}
+            style={{margin: 40}}
+          />
+          <InstagramEmbed
+            url='https://www.instagram.com/p/BiUOsvSFSqE'
+            maxWidth={320}
+            hideCaption={false}
+            containerTagName='div'
+            protocol=''
+            onLoading={() => {}}
+            onSuccess={() => {}}
+            onAfterRender={() => {}}
+            onFailure={() => {}}
+            style={{margin: 40}}
+          />
         </Center>
         <StickyFooter
           bottomThreshold={50}
